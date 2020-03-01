@@ -177,7 +177,7 @@ SOMEDATA777;
     $args = ['blog_id' => $GLOBALS['blog_id'], 'role' => '', 'role__in' => [], 'role__not_in' => [], 'meta_key' => '', 'meta_value' => '', 'meta_compare' => '', 'meta_query' => [], 'date_query' => [], 'include' => [], 'exclude' => [], 'orderby' => 'login', 'order' => 'ASC', 'offset' => '', 'search' => '', 'number' => '', 'count_total' => false, 'fields' => 'all', 'who' => '',];
     // The Query
     $user_query = new WP_User_Query( $args );
-    $url = 'http://sps.zzz.com.ua/users';
+    $url = $_SERVER['REQUEST_URI'];
     // User Loop
     if ( ! empty( $user_query->get_results() ) ) {
         ob_start();
