@@ -1,2 +1,2 @@
 # Create-user
-This test work with wordpress
+Plugin for wordpress, create meta fields for user
